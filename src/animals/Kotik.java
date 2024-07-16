@@ -1,4 +1,4 @@
-package animals;
+package src.animals;
 
 public class Kotik {
     private final static int METHODS = 5;
