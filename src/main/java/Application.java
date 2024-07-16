@@ -21,7 +21,7 @@ public class Application {
     }
 
     public static boolean compareVoice(Kotik kotik1, Kotik kotik2) {
-        return kotik1.getVoice() == kotik2.getVoice();
+        return kotik1.getVoice().equals(kotik2.getVoice());
     }
 
 
