@@ -1,0 +1,4 @@
+class Grass extends Food {
+
+
+}
