@@ -3,9 +3,8 @@ import animals.Kotik;
 public class Application {
     public static void main(String[] args) {
         Kotik kotik1 = new Kotik("Chester", "meeoow", 10, 1000 );
-        Kotik kotik2 = new Kotik();
+        Kotik kotik2 = new Kotik("John");
 
-        kotik2.setName("Chief");
         kotik2.setVoice("meow");
         kotik2.setSatiety(15);
         kotik2.setWeight(20);

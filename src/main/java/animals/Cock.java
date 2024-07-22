@@ -1,6 +1,12 @@
 package animals;
 
+import model.Size;
+
 public class Cock extends Herbivore implements Run, Voice, Swim {
+
+    public Cock(String name) {
+        super(name);
+    }
 
     @Override
     public void run() {
@@ -16,5 +22,10 @@ public class Cock extends Herbivore implements Run, Voice, Swim {
     public void swim() {
         System.out.println("The cock is swimming");
 
+    }
+
+    @Override
+    public Size getSize() {
+        return Size.MEDIUM;
     }
 }

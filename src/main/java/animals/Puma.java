@@ -1,6 +1,12 @@
 package animals;
 
+import model.Size;
+
 public class Puma extends Carnivorous implements Run, Voice, Swim {
+
+    public Puma(String name) {
+        super(name);
+    }
 
     @Override
     public void run() {
@@ -17,5 +23,10 @@ public class Puma extends Carnivorous implements Run, Voice, Swim {
     public void swim() {
         System.out.println("The duck is swimming");
 
+    }
+
+    @Override
+    public Size getSize() {
+        return Size.LARGE;
     }
 }

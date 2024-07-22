@@ -2,12 +2,17 @@ package animals;
 
 import food.Food;
 import food.Grass;
+import food.WrongFoodException;
 
 public abstract class Herbivore extends Animal {
+    Herbivore(String name) {
+        super(name);
+    }
+
     @Override
     public void eat(Food food) {
         if (!(food instanceof Grass)) {
-            System.out.println("[ERROR] Еда должна быть травой");
+            throw new WrongFoodException();
         } else {
             satiety++;
         }
