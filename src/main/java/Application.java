@@ -24,10 +24,9 @@ public class Application {
     }
 
     public static boolean compareVoice(Kotik kotik1, Kotik kotik2) {
-        if (kotik1.equals(null) || kotik2.equals(null)) {
-            System.out.println("Объекты не могут быть null");
-            return false;
+        if (kotik1 != null && kotik2 != null) {
+            return kotik1.getVoice().equals(kotik2.getVoice());
         }
-        return kotik1.getVoice().equals(kotik2.getVoice());
+        return false;
     }
 }
