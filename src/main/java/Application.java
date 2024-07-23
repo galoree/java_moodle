@@ -23,9 +23,10 @@ public class Application {
         System.out.println(Kotik.getCount());
     }
 
-    public static boolean compareVoice(Kotik kotik1, Kotik kotik2) throws IllegalArgumentException {
-        if (kotik1 == null || kotik2 == null) {
-            throw new IllegalArgumentException("Объекты не могут быть null");
+    public static boolean compareVoice(Kotik kotik1, Kotik kotik2) {
+        if (kotik1.equals(null) || kotik2.equals(null)) {
+            System.out.println("Объекты не могут быть null");
+            return false;
         }
         return kotik1.getVoice().equals(kotik2.getVoice());
     }

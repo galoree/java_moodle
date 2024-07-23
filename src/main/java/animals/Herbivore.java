@@ -14,7 +14,7 @@ public abstract class Herbivore extends Animal {
         if (!(food instanceof Grass)) {
             throw new WrongFoodException();
         } else {
-            satiety++;
+            satiety = satiety + food.getEnergy();
         }
     }
 

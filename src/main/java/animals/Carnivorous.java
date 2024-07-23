@@ -15,7 +15,7 @@ public abstract class Carnivorous extends Animal {
         if (!(food instanceof Meat)) {
             throw new WrongFoodException();
         } else {
-            satiety++;
+            satiety = satiety + food.getEnergy();
         }
     }
 }
