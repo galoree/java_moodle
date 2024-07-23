@@ -1,4 +1,4 @@
 package food;
 
-public class WrongFoodException extends RuntimeException {
+public class WrongFoodException extends Exception {
 }
