@@ -14,15 +14,18 @@ public class Application {
 
         System.out.println("name: " + kotik2.getName() +  ", weight: " + kotik2.getWeight());
 
-        System.out.println(compareVoice(kotik1, kotik2));
+        try {
+            System.out.println(compareVoice(kotik1, kotik2));
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
 
         System.out.println(Kotik.getCount());
     }
 
-    public static boolean compareVoice(Kotik kotik1, Kotik kotik2) {
+    public static boolean compareVoice(Kotik kotik1, Kotik kotik2) throws IllegalArgumentException {
         if (kotik1 == null || kotik2 == null) {
             throw new IllegalArgumentException("Объекты не могут быть null");
-            return false;
         }
         return kotik1.getVoice().equals(kotik2.getVoice());
     }

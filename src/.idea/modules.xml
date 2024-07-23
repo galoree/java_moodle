@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/forgit.iml" filepath="$PROJECT_DIR$/.idea/forgit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forgit.iml" filepath="$PROJECT_DIR$/forgit.iml" />
     </modules>
   </component>
 </project>
